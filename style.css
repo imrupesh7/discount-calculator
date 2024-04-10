@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 1366px;
+    width: 100%;
+    height: 100vh !important;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.flex-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 40px;
+}
+
+
+.content p {
+    font-size: 20px;
+}
+
+
+.form-container {
+    width: 48%;
+    height: 300px;
+    padding: 20px;
+    border: 2px solid #1b1b1b;
+    box-shadow: 10px 10px #1b1b1b;
+}
+
+.form-container form input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    color: currentColor;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    border: 2px solid currentColor;
+    box-shadow: 2px 2px #1b1b1b;
+}
+
+.form-container form input[type=button] {
+    height: 80px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: white;
+}
+
+p {
+    font-size: 15px;
+    line-height: 35px;
+    color: #1b1b1b;
+}
+
+
+.github {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    background-color: #e8e8e8;
+    border-radius: 50%;
+    margin: 1rem;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.github i {
+    color: #000;
+}
+
+.github:hover {
+    background-color: #000;
+}
+
+.github:hover i {
+    color: #e8e8e8;
+}
+
+.icon i {
+    font-size: 2.5rem;
+}
+
+
+
+
+@media (max-width:991px) {
+
+
+
+    .container {
+        padding: 0 5%;
+    }
+}
+
+@media (max-width:576px) {
+
+
+
+    .flex-container {
+        gap: 20px;
+    }
+
+    .form-container {
+        width: 100%;
+        height: auto;
+        box-shadow: 2px 2px;
+    }
+
+    .content {
+        padding: 0px;
+    }
+
+    .content p {
+        font-size: 15px;
+    }
+
+}
